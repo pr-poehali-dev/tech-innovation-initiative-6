@@ -1,23 +1,23 @@
-import { Building2, ArrowUpRight, Plus } from "lucide-react"
+import { Trophy, ArrowUpRight, Plus } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 
 const recipients = [
-  { name: "Алексей Петров", info: "alexey@finpotok.ru", code: "P-52112", image: "/professional-man-portrait.png" },
-  { name: "Мария Иванова", info: "+7 (495) 123-45-67", code: "P-52132", image: "/professional-woman-portrait.png" },
-  { name: "Елена Смирнова", info: "elena@finpotok.ru", code: "P-52184", initials: "ЕС", color: "bg-teal-600" },
-  { name: "Дмитрий Козлов", info: "+7 (812) 987-65-43", code: "P-52114", initials: "ДК", color: "bg-amber-600" },
+  { name: "Алексей П.", info: "Выигрыш в Book of Gold", code: "+85 000 ₽", image: "/professional-man-portrait.png" },
+  { name: "Мария И.", info: "Джекпот в Mega Wheel", code: "+340 000 ₽", image: "/professional-woman-portrait.png" },
+  { name: "Елена С.", info: "Live-рулетка", code: "+27 500 ₽", initials: "ЕС", color: "bg-teal-600" },
+  { name: "Дмитрий К.", info: "Турнир Lucky Spin", code: "+120 000 ₽", initials: "ДК", color: "bg-amber-600" },
 ]
 
 export function LinkAccountsCard() {
   return (
     <div className="rounded-2xl bg-[#141414] border border-[#262626] p-6 flex flex-col">
       <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-[#1f1f1f] border border-[#2a2a2a]">
-        <Building2 className="h-5 w-5 text-gray-400" />
+        <Trophy className="h-5 w-5 text-gray-400" />
       </div>
 
-      <h3 className="mb-2 text-lg font-semibold text-white">Объедините все счета</h3>
-      <p className="mb-4 text-sm text-gray-400">Подключите банки, кошельки и карты, чтобы видеть все балансы в одном окне</p>
+      <h3 className="mb-2 text-lg font-semibold text-white">Победители прямо сейчас</h3>
+      <p className="mb-4 text-sm text-gray-400">Тысячи игроков выигрывают каждый день — следующим можешь стать ты</p>
 
       <a href="#" className="mb-6 inline-flex items-center text-sm text-gray-400 hover:text-white transition-colors">
         Подробнее <ArrowUpRight className="ml-1 h-4 w-4" />
@@ -52,7 +52,7 @@ export function LinkAccountsCard() {
           variant="ghost"
           className="w-full justify-center text-gray-500 hover:text-white hover:bg-[#1f1f1f] mt-2"
         >
-          <Plus className="mr-2 h-4 w-4" /> Новый получатель
+          <Plus className="mr-2 h-4 w-4" /> Все победители
         </Button>
       </div>
     </div>
